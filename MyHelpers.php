@@ -343,4 +343,28 @@ class MyHelpers
             }
         }
     }
+
+    public static function forceDownload($type, $filename, $content) {
+        $known_mime_types = array(
+            "html" => "text/html",
+            "exe" => "application/octet-stream",
+            "zip" => "application/zip",
+            "doc" => "application/msword",
+            "jpg" => "image/jpg",
+            "php" => "text/plain",
+            "xls" => "application/vnd.ms-excel",
+            "ppt" => "application/vnd.ms-powerpoint",
+            "gif" => "image/gif",
+            "pdf" => "application/pdf",
+            "txt" => "text/plain",
+            "html"=> "text/html",
+            "png" => "image/png",
+            "jpeg"=> "image/jpg"
+        );
+        
+        header("Content-Type: $known_mime_types[$type]");
+        header("Content-Transfer-Encoding: Binary");
+        header("Content-disposition: attachment; filename=$filename"); 
+        echo $content;
+    }
 }
