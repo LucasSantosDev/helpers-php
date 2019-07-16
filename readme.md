@@ -6,6 +6,24 @@ Execute o comando
 composer require lucasdev/helpers-php
 ```
 
+### Usando no PHP
+
+```
+use LucasDev\HelpersPhp\MyHelpers;
+
+class TesteController extends Controller
+{
+    public function index()
+	{
+        $date = date('Y-m-d');
+
+        $date = MyHelpers::EnDateToBrDate($date);
+
+        dd($date);
+    }
+}
+```
+
 ### Modo de Uso
 
 Formatação de data EN para BR.
