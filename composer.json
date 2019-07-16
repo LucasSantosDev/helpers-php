@@ -1,0 +1,16 @@
+{
+    "name": "lucasdev/helpers-php",
+    "type": "library",
+    "description": "Helpers para ajudar a desenrolar na programação quanto você tem pouco tempo.",
+    "keywords": ["relevant","tags","helpers","php"],
+    "homepage": "https://thinkso.com.br",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Dev",
+            "email": "lucas_ss.arts@live.com",
+            "homepage": "https://linkedin.com/in/lucas-dev-11060a85/",
+            "role": "Developer"
+        }
+    ],
+}
