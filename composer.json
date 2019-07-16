@@ -5,6 +5,15 @@
     "keywords": ["relevant","tags","helpers","php"],
     "homepage": "https://thinkso.com.br",
     "license": "MIT",
+    "version": "1.0",
+    "autoload": {
+        "psr-4": {
+            "LucasDev\\HelpersPhp\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">5.4"
+    },
     "authors": [
         {
             "name": "Lucas Dev",
